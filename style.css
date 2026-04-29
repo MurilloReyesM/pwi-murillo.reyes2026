@@ -1,0 +1,95 @@
+/*fazer isso em todo site pra resetar as config de espaçamento margin, padding e box sizing*/
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+/*Menu Principal*/
+.menu{ /* configurando a caixa do menu*/
+    display: flex;
+    justify-content: space-between; /* separa a logo e o menu*/
+    align-items: center;/*align= alinhamento, center, centralizado*/
+    background-color: #eee; /* cor de fundo do site*/
+    padding: 15px 30x; /*espaçamento de 15 pixels por 30 pixels*/
+
+}
+/* Logo*/ 
+.logo{
+    color: #a8001c;
+    font-size: 24px;
+    font-weight: Bold;
+}
+/* programar a lista de links, que seria <ul no html */
+.menu-links{
+    list-style: none;
+    display:flex; /* elementos lado a lado */
+    gap:25px; /*espaço entre os itens/links */
+} 
+/* links */
+.menu-links a {
+    text-decoration: none; /* tirar a linha que fica embaixo do link */
+    color: #555; /*cor dos links*/
+    Font-size: 16px; /*tamanho dos links*/
+    transition:0.3s;  /*transição de cor demora 0.3s*/
+} 
+/*hover (efeito ao passar o mouse)*/
+.menu-links a:hover{
+    color:red; /* muda a cor da escrita pra vermelho quando passa o mouse */
+}
+/*item ativo (inicio)*/
+.menu-links .ativo{
+    color: red;  
+    font-weight: bolder;
+}
+/*footer*/
+/* barra vermelha superior*/
+.barra-alerta{
+    background-color: #a8001c; /*cor do fundo da faixa */
+    color: white; /*cor das letras */
+    text-align: center; /* alinhar o texto no meio da linha */
+    padding: 10px; /* tamanho do espaçamento */
+    font-size: 14px; /* tamanho da fonte de escrita*/
+}
+/*container principal do footer*/
+.footer-container{
+Display: flex;
+justify-content:space-between; 
+align-items: center;
+background-color: #f5f5ff;
+padding: 30px; 
+flex-wrap: wrap;
+}
+/*logo*/
+.footer-logo h2{
+    Color: #a8001c
+}
+/*links*/
+.footer-links{
+    display: flex;
+   /* flex-direction: column; colocar em forma de coluna */
+    gap: 10px; /*espaçamento entre links*/
+}
+.footer-links a{
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+.footer-links a:hover{ /*a:hover serve pra colocar efeito de mudar cor da palavra ao passar o mouse */
+    color: #a8001c;
+}
+.footer-redes{
+    gap: 10px;
+    display: flex;
+}
+.footer-redes a{ 
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+.footer-redes a:hover{ /*a:hover serve pra colocar efeito de mudar cor da palavra ao passar o mouse */
+    color: #a8001c;
+}
+
+
+
+
